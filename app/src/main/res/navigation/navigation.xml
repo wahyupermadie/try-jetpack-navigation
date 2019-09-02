@@ -9,10 +9,20 @@
         android:id="@+id/mainFragment"
         android:name="com.example.latihanjetpack.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_destinationFragment"
+            app:destination="@id/destinationFragment"
+            />
+    </fragment>
     <fragment
         android:id="@+id/destinationFragment"
         android:name="com.example.latihanjetpack.DestinationFragment"
         android:label="fragment_destination"
-        tools:layout="@layout/fragment_destination" />
+        tools:layout="@layout/fragment_destination">
+        <argument
+            android:name="nameToShow"
+            android:defaultValue="Wahyu"
+            app:argType="string" />
+    </fragment>
 </navigation>

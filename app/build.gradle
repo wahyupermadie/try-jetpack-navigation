@@ -36,4 +36,6 @@ dependencies {
     def nav_version = "1.0.0"
     implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
 }
